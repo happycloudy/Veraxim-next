@@ -1,15 +1,15 @@
 export default function Footer(){
     return(
-      <div className="container mt-5">
+      <footer className="container mt-5" >
         <div className="row">
           <div className="col text-center"> <img src="fondimg.webp"/></div>
         </div>
 
         <div className="row">
-          <div className="col text-center" style={{color:"#ffffff"}}>
+          <div className="col text-center mt-3" style={{fontWeight:"600", fontSize:"1.5rem"}}>
             Благодарим за поддержку Фонд Содействия развитию малых форм предприятий в научно-технической сфере!
           </div>
         </div>
-      </div>
+      </footer>
     )
   }

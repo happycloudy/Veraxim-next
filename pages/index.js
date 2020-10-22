@@ -4,11 +4,13 @@ import Header from './header'
 
 export default function Home() {
   return (
-    <div className="container">
-      <Head title="Главная"/>
+    <div className="container" style={{backgroundColor:"rgba(255, 255, 255, .8)",height:"100vh"}}>
+    <Head title="Главная"/>
       <Header/>
       <Main/>
       <Footer/>
+
+
       <style jsx global>{`
       .HellowordsText{
         background-color: rgba(255,255,255,.8);

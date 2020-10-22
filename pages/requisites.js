@@ -8,7 +8,7 @@ export default function Requisites() {
       <Head title="Реквизиты"/>
       <Header/>
 
-      <div className="jumbotron jumbotron-fluid">
+      <div className="jumbotron jumbotron-fluid" style={{boxShadow: "0px 0px 30px 0px rgba(159, 154, 161, 1)", borderRadius: "10px" }}>
         <div className="container">
           <p className="lead">
           <span style={{opacity:".8"}}>
@@ -26,8 +26,6 @@ export default function Requisites() {
             БИК: 044525297 <br/>
             К / счет: 30101810945250000297 <br/>
             Р / счет: 40702810324000026120 <br/>
-
-
           </p>
         </div>
       </div>

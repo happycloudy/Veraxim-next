@@ -2,9 +2,9 @@ export default  function Header() {
     return (
       <div className="container">
 
-      <header className="container mt-5 mb-5">
+      <header className="container ">
         <div className="row">
-          <div className="col-3 offset-1 Logo">
+          <div className="col-3 Logo">
             <a >Общество с ограниченной ответственностью</a>
             <h2>"Верахим"</h2>
           </div>
