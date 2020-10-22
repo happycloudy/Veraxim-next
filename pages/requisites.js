@@ -2,7 +2,7 @@ import Head from './head'
 import Header from './header'
 import Footer from './footer'
 
-export default function Requisites(title) {
+export default function Requisites() {
   return (
     <div className="container">
       <Head title="Реквизиты"/>
@@ -19,8 +19,8 @@ export default function Requisites(title) {
             ИНН 7707798877 <br/>
             КПП 770701001 <br/>
             ОГРН 11377462054095 <br/>
-            ОКПО 17251574 <br/>
-            Банковские реквизиты: <br/><br/>
+            ОКПО 17251574 <br/><br/>
+            Банковские реквизиты: <br/>
             ФИЛИАЛ ЦЕНТРАЛЬНЫЙ ПАО БАНКА "ФК ОТКРЫТИЕ"
           г.МОСКВА <br/>
             БИК: 044525297 <br/>
@@ -54,10 +54,9 @@ export default function Requisites(title) {
       .lead{
         text-align: right;
         color: black;
-        opacity: 1;
       }
       .jumbotron{
-        opacity: .7;
+        opacity: .9;
       }
     `}
     </style>
