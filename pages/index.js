@@ -12,23 +12,12 @@ export default function Home() {
       <style jsx global>{`
       .HellowordsText{
         background-color: rgba(255,255,255,.8);
-        font: normal normal 20px Arial,Helvetica,sans-serif;
+        font: normal normal 24px Arial,Helvetica,sans-serif;
         text-align:center;
         padding: 20px 10px 20px 10px;
       }
       .text{
         padding: 10px 10px 10px 10px;
-      }
-      .Logo{
-        background-color: rgba(255,252,217,.6);
-        border-radius:10px;
-        text-align:center;
-        color: #454545;
-      }
-      .navbar{
-        font: normal normal 17px Arial,Helvetica,sans-serif;
-        margin-top:6vh;
-        background-color: rgba(255,252,217,.7);
       }
     `}
     </style>
@@ -68,7 +57,9 @@ function Main(){
   return(
     <div className="container">
       <div className="container">
-
+      <div className="col text-center mb-5">
+        <img src="veraximimg.webp"></img>
+        </div>
       </div>
       <div className="container">
         <div className="col-10 offset-1">
