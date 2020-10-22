@@ -22,7 +22,8 @@ export default function Home() {
 function Head_er() {
   return (
     <div className="container">
-    <header className="container">
+
+    <header className="container mt-5">
       <div className="row">
         <div className="col-2 Logo">
           <a >Общество с ограниченной ответственностью</a>
