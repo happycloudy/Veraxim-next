@@ -4,7 +4,7 @@ export default  function Header() {
 
       <header className="container mt-5 mb-5">
         <div className="row">
-          <div className="col-2 offset-1 Logo">
+          <div className="col-3 offset-1 Logo">
             <a >Общество с ограниченной ответственностью</a>
             <h2>"Верахим"</h2>
           </div>
