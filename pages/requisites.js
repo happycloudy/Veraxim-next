@@ -10,7 +10,25 @@ export default function Requisites(title) {
 
       <div className="jumbotron jumbotron-fluid">
         <div className="container">
-          <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          <p className="lead">
+          <span style={{opacity:".8"}}>
+          Общество с ограниченной ответственностью "ВЕРАХИМ"<br/>
+          Генеральный директор: Солдатенок М.В. <br/> <br/>
+          </span>
+            Юридический и почтовый адрес: 125047, г.Москва, Миусская пл., д.9, стр.3 <br/>
+            ИНН 7707798877 <br/>
+            КПП 770701001 <br/>
+            ОГРН 11377462054095 <br/>
+            ОКПО 17251574 <br/>
+            Банковские реквизиты: <br/><br/>
+            ФИЛИАЛ ЦЕНТРАЛЬНЫЙ ПАО БАНКА "ФК ОТКРЫТИЕ"
+          г.МОСКВА <br/>
+            БИК: 044525297 <br/>
+            К / счет: 30101810945250000297 <br/>
+            Р / счет: 40702810324000026120 <br/>
+
+
+          </p>
         </div>
       </div>
 
@@ -32,6 +50,14 @@ export default function Requisites(title) {
         padding: 0px 0px 0px 0px;
         text-transform: none;
         font-size: 14px;
+      }
+      .lead{
+        text-align: right;
+        color: black;
+        opacity: 1;
+      }
+      .jumbotron{
+        opacity: .7;
       }
     `}
     </style>
