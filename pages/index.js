@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Footer from './footer'
+import Header from './header'
 
 export default function Home() {
   return (
@@ -12,57 +13,10 @@ export default function Home() {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       </Head>
-      <Head_er/>
+      <Header/>
       <Main/>
       <Footer/>
-    </div>
-  )
-}
-
-
-function Head_er() {
-  return (
-    <div className="container">
-
-    <header className="container mt-5 mb-5">
-      <div className="row">
-        <div className="col-2 offset-1 Logo">
-          <a >Общество с ограниченной ответственностью</a>
-          <h2>"Верахим"</h2>
-        </div>
-        <div className="col-7 offset-1">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <div className="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul className="navbar-nav">
-                <li className="nav-item active">
-                  <a className="nav-link" href="#">Главная <span className="sr-only">(current)</span></a>
-                </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Деятельность компании
-                  </a>
-                  <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a className="dropdown-item" href="/description">Описание проекта</a>
-                    <a className="dropdown-item" href="#">Что мы предлагаем</a>
-                  </div>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Реквизиты</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="#">Обратная связь</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-
-
-
-    <style jsx global>{`
+      <style jsx global>{`
       .HellowordsText{
         background-color: rgba(255,255,255,.8);
       }
@@ -76,8 +30,13 @@ function Head_er() {
         color: #454545;
       }
       .navbar{
-        margin-top:30px;
-        background-color: rgba(255,252,217,.6);
+        font: normal normal 17px Arial,Helvetica,sans-serif;
+        margin-top:6vh;
+        background-color: rgba(255,252,217,.7);
+        color: #454545;
+        link: #454545;
+        alink: black;
+        vlink: #454545;
       }
     `}
     </style>
@@ -101,10 +60,17 @@ function Head_er() {
       }
     `}
     </style>
-
     </div>
+        
   )
 }
+
+
+
+
+
+
+
 
 function Main(){
   return(
