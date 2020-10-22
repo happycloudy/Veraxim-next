@@ -10,7 +10,6 @@ export default function Requisites(title) {
 
       <div className="jumbotron jumbotron-fluid">
         <div className="container">
-          <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
         </div>
       </div>
 
@@ -32,6 +31,9 @@ export default function Requisites(title) {
         padding: 0px 0px 0px 0px;
         text-transform: none;
         font-size: 14px;
+      }
+      .jumbotron{
+        opacity: .9;
       }
     `}
     </style>
