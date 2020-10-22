@@ -28,7 +28,7 @@ export default  function Header() {
                     <a className="nav-link" href="/requisites" >Реквизиты</a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="#">Обратная связь</a>
+                    <a className="nav-link" href="/connection">Обратная связь</a>
                   </li>
                 </ul>
               </div>

@@ -5,7 +5,7 @@ import Header from './header'
 export default function Home() {
   return (
     <div className="container">
-      <Head title="Главная"/>
+      <Head title="Главная | Veraxim"/>
       <Header/>
       <Main/>
       <Footer/>

@@ -7,7 +7,7 @@ export default function Description() {
     <div className ="container">
     <Header/>
     <div className="container" style={{width: "50vw"}}>
-    <Head title="Описание"/>
+    <Head title="Описание | Veraxim"/>
     
     <div className="row description mt-5" >
       <div className="text col">

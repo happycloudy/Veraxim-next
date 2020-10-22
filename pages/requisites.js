@@ -5,7 +5,7 @@ import Footer from './footer'
 export default function Requisites() {
   return (
     <div className="container">
-      <Head title="Реквизиты"/>
+      <Head title="Реквизиты | Veraxim"/>
       <Header/>
 
       <div className="jumbotron jumbotron-fluid">

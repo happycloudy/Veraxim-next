@@ -2,10 +2,10 @@ import Head from './head'
 import Header from './header'
 import Footer from './footer'
 
-export default function Requisites(title) {
+export default function Suggested(title) {
   return (
     <div className="container">
-      <Head title="Что мы предлагаем"/>
+      <Head title="Что мы предлагаем | Veraxim"/>
       <Header/>
 
       <div className="jumbotron jumbotron-fluid">
