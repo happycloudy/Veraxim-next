@@ -25,11 +25,11 @@ function Head_er() {
 
     <header className="container mt-5">
       <div className="row">
-        <div className="col-2 Logo">
+        <div className="col-2 offset-1 Logo">
           <a >Общество с ограниченной ответственностью</a>
           <h2>"Верахим"</h2>
         </div>
-        <div className="col-8 offset-1">
+        <div className="col-7 offset-1">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
               <ul className="navbar-nav">
@@ -67,6 +67,16 @@ function Head_er() {
       }
       .text{
         padding: 10px 10px 10px 10px;
+      }
+      .Logo{
+        background-color: rgba(255,252,217,.6);
+        border-radius:10px;
+        text-align:center;
+        color: #454545;
+      }
+      .navbar{
+        margin-top:30px;
+        background-color: rgba(255,252,217,.6);
       }
     `}
     </style>
