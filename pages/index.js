@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from './head'
 import Footer from './footer'
 import Header from './header'
 
