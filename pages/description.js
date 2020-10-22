@@ -1,4 +1,4 @@
-import Header from './header'
+import Head from './header'
 import Footer from './footer'
 
 export default function Description() {
@@ -13,7 +13,7 @@ export default function Description() {
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
       </Head> */}
-      <Header title="Описание"/>
+      <Head title="Описание"/>
 
     <div className="row description mt-5" >
       <div className="text col">
