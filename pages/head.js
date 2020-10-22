@@ -1,42 +1,15 @@
-export default  function Header() {
+import Head from 'next/head'
+
+export default  function Header(props) {
     return (
-      <div className="container">
+      <Head>
+        <title>{props.title}</title>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></link>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-      <header className="container mt-5 mb-5">
-        <div className="row">
-          <div className="col-2 offset-1 Logo">
-            <a >Общество с ограниченной ответственностью</a>
-            <h2>"Верахим"</h2>
-          </div>
-          <div className="col-7 offset-1">
-          <nav className="navbar navbar-expand-lg ">
-              <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul className="navbar-nav">
-                  <li className="nav-item active">
-                    <a className="nav-link" href="#">Главная <span className="sr-only">(current)</span></a>
-                  </li>
-                  <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Деятельность компании
-                    </a>
-                    <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a className="dropdown-item" href="/description">Описание проекта</a>
-                      <a className="dropdown-item" href="#">Что мы предлагаем</a>
-                    </div>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Реквизиты</a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="#">Обратная связь</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </header>
-
-    </div>
+      </Head>
   )
 }
