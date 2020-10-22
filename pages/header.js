@@ -17,7 +17,7 @@ export default  function Header() {
                   </li>
                   <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Деятельность компании123
+                      Деятельность компании
                     </a>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                       <a className="dropdown-item" href="/description">Описание проекта</a>
