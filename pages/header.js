@@ -51,7 +51,7 @@ export default  function Header() {
           }
           .navbar{
             font: normal normal 17px Arial,Helvetica,sans-serif;
-            margin-top:6vh;
+            margin-top:4vh;
             background-color: rgba(255,252,217,.7);
             border-radius:10px;
           }
