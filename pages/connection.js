@@ -16,7 +16,7 @@ export default function Connection(title) {
 
       <style jsx global>{`
       body{
-        background: url(descrBg.webp) no-repeat;
+        background: url(mainBg.webp) no-repeat;
         background-size: cover;
         margin: 0;
         padding: 0;
