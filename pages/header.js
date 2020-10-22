@@ -21,7 +21,7 @@ export default  function Header() {
                     </a>
                     <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                       <a className="dropdown-item" href="/description">Описание проекта</a>
-                      <a className="dropdown-item" href="#">Что мы предлагаем</a>
+                      <a className="dropdown-item" href="/suggested">Что мы предлагаем</a>
                     </div>
                   </li>
                   <li className="nav-item">
@@ -44,7 +44,7 @@ export default  function Header() {
             active:black;
         }
         .Logo{
-            background-color: rgba(255,252,217,.6);
+            background-color: rgba(255,252,217,.7);
             border-radius:10px;
             text-align:center;
             color: #454545;
