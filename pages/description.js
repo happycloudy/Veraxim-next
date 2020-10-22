@@ -1,4 +1,4 @@
-import Head from './header'
+import Head from './head'
 import Footer from './footer'
 
 export default function Description() {
