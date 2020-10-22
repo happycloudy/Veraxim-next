@@ -9,7 +9,21 @@ export default function Requisites(title) {
       <Header/>
 
       <div className="jumbotron jumbotron-fluid">
-        <div className="container">
+        <div className="container suggest">
+            <img src =""></img>
+            <h1>Установка по производству кормовой добавки</h1>
+        </div>
+        <div className="container suggest">
+            <img src =""></img>
+            <h1>Технология под ключ</h1>
+        </div>
+        <div className="container suggest">
+            <img src =""></img>
+            <h1>Кормовая добавка</h1>
+        </div>
+        <div className="container suggest">
+            <img src =""></img>
+            <h1>НИОКР в области биотехнологии</h1>
         </div>
       </div>
 
@@ -34,6 +48,9 @@ export default function Requisites(title) {
       }
       .jumbotron{
         opacity: .9;
+      }
+      .suggest{
+        text-align: center;
       }
     `}
     </style>
