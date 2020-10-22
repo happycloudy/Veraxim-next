@@ -15,6 +15,48 @@ export default function Home() {
       <Head_er/>
       <Main/>
       <Foot_er/>
+
+      <style jsx global>{`
+      .HellowordsText{
+        background-color: rgba(255,255,255,.8);
+      }
+      .text{
+        padding: 10px 10px 10px 10px;
+      }
+      .Logo{
+        background-color: rgba(255,252,217,.6);
+        border-radius:10px;
+        text-align:center;
+        color: #454545;
+      }
+      .row{
+        margin-top: 40px;
+      }
+    `}
+    </style>
+
+      <style jsx global>{`
+      body{
+        background: url(mainBg.webp) no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        
+
+        font: normal normal 14px Arial,Helvetica,sans-serif;
+        color: #454545;
+        text-decoration: none;
+        text-align: left;
+        line-height: 24px;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        text-transform: none;
+        font-size: 14px;
+      }
+    `}
+    </style>
+
+
     </div>
   )
 }
@@ -25,7 +67,7 @@ function Head_er() {
     <div className="container">
     <header className="container">
       <div className="row">
-        <div className="col-2 Logo">
+        <div className="col-2 offset-1 Logo">
           <a href>Общество с ограниченной ответственностью</a>
           <h2>"Верахим"</h2> 
         </div>
@@ -57,40 +99,6 @@ function Head_er() {
         </div>
       </div>
     </header>
-
-
-
-
-    <style jsx global>{`
-      .HellowordsText{
-        background-color: rgba(255,255,255,.8);
-      }
-      .text{
-        padding: 10px 10px 10px 10px;
-      }
-    `}
-    </style>
-
-      <style jsx global>{`
-      body{
-        background: url(mainBg.webp) no-repeat;
-        background-size: cover;
-        margin: 0;
-        padding: 0;
-
-        font: normal normal 14px Arial,Helvetica,sans-serif;
-        color: #454545;
-        text-decoration: none;
-        text-align: left;
-        line-height: 24px;
-        margin: 0px 0px 0px 0px;
-        padding: 0px 0px 0px 0px;
-        text-transform: none;
-        font-size: 14px;
-      }
-    `}
-    </style>
-
     </div>
   )
 }
@@ -99,7 +107,6 @@ function Main(){
   return(
     <div className="container">
       <div className="container">
-
       </div>
       <div className="container">
         <div className="col-10 offset-1">
