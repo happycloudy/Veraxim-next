@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 export default function Home() {
   return (
-    <div className="container">
+    <div className="container" style={{width: "50vw"}}>
       <Head>
         <title>Описание</title>
         <link rel="icon" href="/favicon.ico" />
@@ -14,8 +14,8 @@ export default function Home() {
 
       </Head>
 
-    <div className="description mt-5">
-      <div className="text">
+    <div className="row description mt-5" >
+      <div className="text col">
       На современном этапе развития для жизнеобеспечения человека огромное количество проблем решаются с применением биотехнологических методов. Наиболее важной из них является балансировка кормов и комбикормов путем введения микробного белка. Вклад биотехнологии в обеспечение кормами сельскохозяйственных животных осуществляется в основном за счет микробиологической конверсии отходов пищевых производств, сельскохозяйственных отходов, отходов деревообрабатывающей промышленности. Корма растительного происхождения составляют основу рационов всех видов сельскохозяйственных животных и птицы, а несбалансированность рационов по белку приводит к перерасходу кормов, усугубляя тем самым их дефицит.
       <br/>
       <br/>
@@ -33,12 +33,13 @@ export default function Home() {
       </div>
     </div>
 
+    <Footer/>
 
 
-    <style jsx global>{`
+
+    <style jsx>{`
       .description{
         background-color: rgba(255,255,255,.8);
-        width: 50vw;
       }
       .text{
         padding: 10px 10px 10px 10px;
@@ -65,7 +66,23 @@ export default function Home() {
       }
     `}
     </style>
-
     </div>
+  )
+}
+
+function Footer(){
+  return(
+    <div className="container mt-5">
+      <div className="row">
+        <div className="col text-center"> <img src="fondimg.webp"/></div>
+      </div>
+
+      <div className="row">
+        <div className="col text-center" style={{color:"#ffffff"}}>
+          Благодарим за поддержку Фонд Содействия развитию малых форм предприятий в научно-технической сфере!
+        </div>
+      </div>
+    </div>
+
   )
 }

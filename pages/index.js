@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -26,8 +26,8 @@ function Head_er() {
     <header className="container">
       <div className="row">
         <div className="col-2 Logo">
-          <a href>Общество с ограниченной ответственностью</a>
-          <h2>"Верахим"</h2> 
+          <a >Общество с ограниченной ответственностью</a>
+          <h2>"Верахим"</h2>
         </div>
         <div className="col-8 offset-1">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -41,7 +41,7 @@ function Head_er() {
                     Деятельность компании
                   </a>
                   <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a className="dropdown-item" href="#">Описание проекта</a>
+                    <a className="dropdown-item" href="/description">Описание проекта</a>
                     <a className="dropdown-item" href="#">Что мы предлагаем</a>
                   </div>
                 </li>
@@ -109,7 +109,7 @@ function Main(){
             <p>Надеемся на Вашу заинтересованность и перспективное сотрудничество!</p>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
   )
 }
