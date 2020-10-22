@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from './footer'
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       </Head>
       <Head_er/>
       <Main/>
-      <Foot_er/>
+      <Footer/>
     </div>
   )
 }
@@ -23,7 +24,7 @@ function Head_er() {
   return (
     <div className="container">
 
-    <header className="container mt-5">
+    <header className="container mt-5 mb-5">
       <div className="row">
         <div className="col-2 offset-1 Logo">
           <a >Общество с ограниченной ответственностью</a>
@@ -122,19 +123,4 @@ function Main(){
       </div>
     </div>
   )
-}
-
-function Foot_er(){
-    return(
-      <footer className="container">
-        <div className="row">
-          <div className="col-3 offset-5">
-            <p>Благодарим за поддержку Фонд Содействия развитию малых форм предприятий в научно-технической сфере!</p>
-          </div>
-          <div className="col-3">
-            <img src=""></img>
-          </div>
-        </div>
-      </footer>
-    )
 }
