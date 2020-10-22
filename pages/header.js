@@ -43,6 +43,17 @@ export default  function Header() {
             vlink:#454545;
             active:black;
         }
+        .Logo{
+            background-color: rgba(255,252,217,.6);
+            border-radius:10px;
+            text-align:center;
+            color: #454545;
+          }
+          .navbar{
+            font: normal normal 17px Arial,Helvetica,sans-serif;
+            margin-top:6vh;
+            background-color: rgba(255,252,217,.7);
+          }
     `}
     </style>
     </div>
