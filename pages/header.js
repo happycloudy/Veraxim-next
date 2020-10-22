@@ -13,7 +13,7 @@ export default  function Header() {
               <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav">
                   <li className="nav-item active">
-                    <a className="nav-link" href="#">Главная <span className="sr-only">(current)</span></a>
+                    <a className="nav-link" href="/">Главная <span className="sr-only">(current)</span></a>
                   </li>
                   <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -36,7 +36,15 @@ export default  function Header() {
           </div>
         </div>
       </header>
-
+      <style jsx global>{`
+        .nav-link{
+            color:#454545;
+            alink:black;
+            vlink:#454545;
+            active:black;
+        }
+    `}
+    </style>
     </div>
   )
 }
