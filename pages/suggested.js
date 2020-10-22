@@ -10,19 +10,19 @@ export default function Requisites(title) {
 
       <div className="jumbotron jumbotron-fluid">
         <div className="container suggest">
-            <img src =""></img>
+            <img src ="/otoplenie.png" className="image"></img>
             <h1>Установка по производству кормовой добавки</h1>
         </div>
-        <div className="container suggest">
-            <img src =""></img>
+        <div className="container suggest" >
+            <img src ="/fufaika.png" className="image"></img>
             <h1>Технология под ключ</h1>
         </div>
         <div className="container suggest">
-            <img src =""></img>
+            <img src ="/pole.png" className="image"></img>
             <h1>Кормовая добавка</h1>
         </div>
-        <div className="container suggest">
-            <img src =""></img>
+        <div className="container suggest" >
+            <img src ="/biotech.png" className="image"></img>
             <h1>НИОКР в области биотехнологии</h1>
         </div>
       </div>
@@ -51,6 +51,10 @@ export default function Requisites(title) {
       }
       .suggest{
         text-align: center;
+      }
+      .image{
+          width: 35%;
+          height: 20%;
       }
     `}
     </style>
