@@ -33,10 +33,6 @@ export default function Home() {
         font: normal normal 17px Arial,Helvetica,sans-serif;
         margin-top:6vh;
         background-color: rgba(255,252,217,.7);
-        color: #454545;
-        link: #454545;
-        alink: black;
-        vlink: #454545;
       }
     `}
     </style>
