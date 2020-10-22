@@ -12,6 +12,9 @@ export default function Home() {
       <style jsx global>{`
       .HellowordsText{
         background-color: rgba(255,255,255,.8);
+        font: normal normal 20px Arial,Helvetica,sans-serif;
+        text-align:center;
+        padding: 20px 10px 20px 10px;
       }
       .text{
         padding: 10px 10px 10px 10px;
