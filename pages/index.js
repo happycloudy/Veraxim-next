@@ -37,7 +37,7 @@ export default function Home() {
     `}
     </style>
 
-      <style jsx global>{`
+    <style jsx global>{`
       body{
         background: url(mainBg.webp) no-repeat;
         background-size: cover;
@@ -57,7 +57,7 @@ export default function Home() {
     `}
     </style>
     </div>
-        
+
   )
 }
 

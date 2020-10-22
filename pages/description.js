@@ -4,7 +4,7 @@ import Footer from './footer'
 export default function Description() {
   return (
     <div className="container" style={{width: "50vw"}}>
-      <Head title="Описание"/>
+    <Head title="Описание"/>
 
     <div className="row description mt-5" >
       <div className="text col">
