@@ -4,7 +4,7 @@ import Header from './header'
 
 export default function Home() {
   return (
-    <div className="container" style={{backgroundColor:"rgba(255, 255, 255, .8)",height:"100vh"}}>
+    <div className="container" style={{backgroundColor:"rgba(255, 255, 255, .8)",height:"100%"}}>
     <Head title="Главная"/>
       <Header/>
       <Main/>
