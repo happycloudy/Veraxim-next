@@ -4,13 +4,8 @@ import Header from './header'
 
 export default function Home() {
   return (
-<<<<<<< HEAD
     <div className="container" style={{backgroundColor:"rgba(255, 255, 255, .8)",height:"100vh"}}>
     <Head title="Главная"/>
-=======
-    <div className="container">
-      <Head title="Главная | Veraxim"/>
->>>>>>> fed865afcc2e75238a7ecef140c3854c52c01227
       <Header/>
       <Main/>
       <Footer/>
