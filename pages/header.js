@@ -6,7 +6,7 @@ export default  function Header() {
           <a >Общество с ограниченной ответственностью</a>
           <h2>"Верахим"</h2>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" id="navButton" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -47,6 +47,12 @@ export default  function Header() {
 
 
         <style jsx global>{`
+        @media (max-width:992px) {
+          #navButton{
+            display:block;
+            margin-top:5vw;
+          }
+        }
         .nav-link{
             color:#454545;
             alink:black;
