@@ -4,7 +4,7 @@ import Header from './header'
 
 export default function Home() {
   return (
-    <div className="container" style={{backgroundColor:"rgba(255, 255, 255, .8)",height:"100vh"}}>
+    <div className="container" style={{backgroundColor:"rgba(255, 255, 255, .8)",height:"100%"}}>
     <Head title="Главная"/>
       <Header/>
       <Main/>
@@ -36,10 +36,11 @@ export default function Home() {
         text-decoration: none;
         text-align: left;
         line-height: 24px;
-        margin: 0px 0px 0px 0px;
-        padding: 0px 0px 0px 0px;
+        margin: 0;
+        padding: 0;
         text-transform: none;
         font-size: 14px;
+        height: 100%;
       }
     `}
     </style>
@@ -60,7 +61,7 @@ function Main(){
     <div className="container">
       <div className="container">
       <div className="col text-center mb-5">
-        <img src="veraximimg.webp"></img>
+        <img src="veraximimg.webp" className="img-fluid"></img>
         </div>
       </div>
       <div className="container">

@@ -1,15 +1,14 @@
 export default  function Header() {
     return (
-      <div className="container">
-
-      <header className="container ">
-        <div className="row">
+      <div>
+      <header className="container mb-3">
+        <div className="row" style={{backgroundColor: "rgba(255,252,217,.7)"}}>
           <div className="col-3 Logo">
             <a >Общество с ограниченной ответственностью</a>
             <h2>"Верахим"</h2>
           </div>
-          <div className="col-7 offset-1">
-          <nav className="navbar navbar-expand-lg ">
+          <div className="col-7 offset-2 d-flex align-center">
+            <nav className="navbar navbar-expand-lg" style={{backgroundColor:"rgba(250, 227, 92, 0.6)"}}>
               <div className="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul className="navbar-nav">
                   <li className="nav-item active">
@@ -44,15 +43,15 @@ export default  function Header() {
             active:black;
         }
         .Logo{
-            background-color: rgba(255,252,217,.7);
-            border-radius:10px;
+            border: 1px solid;
+            border-radius: 10px;
             text-align:center;
             color: #454545;
+            font-size: 1.1rem;
+            background-color: rgba(250, 227, 92, 0.6);
           }
           .navbar{
-            font: normal normal 17px Arial,Helvetica,sans-serif;
-            margin-top:4vh;
-            background-color: rgba(255,252,217,.7);
+            font: normal normal 1rem Arial,Helvetica,sans-serif;
             border-radius:10px;
           }
     `}
