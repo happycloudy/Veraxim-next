@@ -56,6 +56,13 @@ export default function Connection(title) {
       .ask{
         height: 7vw;
       }
+      .btn{
+        border-radius:10px;
+        border:1px solid grey;
+        -webkit-box-shadow: 6px 4px 16px 0px rgba(50, 50, 50, 0.6);
+        -moz-box-shadow:    6px 4px 16px 0px rgba(50, 50, 50, 0.6);
+        box-shadow:         6px 4px 16px 0px rgba(50, 50, 50, 0.6);
+      }
     `}
     </style>
     </div>

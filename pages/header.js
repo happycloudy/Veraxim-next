@@ -1,5 +1,6 @@
 export default  function Header() {
     return (
+      
       <nav className="navbar navbar-expand-lg navbar-light ">
         <div className="col-3 Logo">
           <a >Общество с ограниченной ответственностью</a>
@@ -29,13 +30,13 @@ export default  function Header() {
             </li>
           </ul>
         </div>
+        
         <style jsx global>{`
         .nav-link{
             color:#454545;
             alink:black;
             vlink:#454545;
             active:black;
-            width:
         }
         .Logo{
             border: 1px solid;
