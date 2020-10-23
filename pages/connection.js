@@ -7,30 +7,8 @@ export default function Connection(title) {
     <div className="container">
       <Head title="Обратная связь | Veraxim"/>
       <Header/>
-
-      <div className="jumbotron jumbotron-fluid mt-5">
-        <h1>Вы можете написать нам электронную почту VERAXIM@MAIL.RU или отправить свой вопрос здесь: </h1>
-
-        <form className="col-10 offset-1">
-        <div className="form-group">
-          <label htmlFor="YourName">Имя</label>
-          <input type="text" className="form-control" id="YourName" placeholder="Иван"/>
-        </div>
-        <div className="form-group">
-          <label htmlFor="YourEmail">Email</label>
-          <input type="text" className="form-control" id="YourEmail" placeholder="example@mail.ru"/>
-        </div>
-        <div className="form-group">
-          <label htmlFor="YourQuestion">Сообщение</label>
-          <input type="text" className="form-control" id="YourQuestion" placeholder="Сообщение"/>
-        </div>
-        <button id="ButtonSumbit" type="submit" className="btn" onClick={btnClick}>Отправить</button>
-      </form>
-
-      </div>
-
+      <Forma/>
       <Footer/>
-
       <style jsx global>{`
       body{
         background: url(mainBg.webp) no-repeat;
@@ -66,9 +44,34 @@ export default function Connection(title) {
 
 function btnClick(e){
   e.preventDefault()
-   /* let email=document.getElementById("YourEmail");
-    let name=document.getElementById("YourName");
-    let question=document.getElementById("YourQuestion");
-    console.log(email+' '+name+' '+question+' ');*/
-  console.log("123");
+    let email=document.getElementById("YourEmail").value;
+    let name=document.getElementById("YourName").value;
+    let question=document.getElementById("YourQuestion").value;
+    console.log(email+' '+name+' '+question+' ');
+}
+
+function Forma(){
+  return(
+    <div className="jumbotron jumbotron-fluid mt-5">
+        <h1>Вы можете написать нам электронную почту VERAXIM@MAIL.RU или отправить свой вопрос здесь: </h1>
+        <form className="col-10 offset-1">
+        <div className="form-group">
+          <label htmlFor="YourName">Имя</label>
+          <input type="text" className="form-control" id="YourName" name="YourName" placeholder="Иван" required/>
+        </div>
+        <div className="form-group">
+          <label htmlFor="YourEmail">Email</label>
+          <input type="text" className="form-control" name="YourEmail" id="YourEmail" placeholder="example@mail.ru" required/>
+        </div>
+        <div className="form-group">
+          <label htmlFor="YourQuestion">Сообщение</label>
+          <input type="text" className="form-control" name="YourQuestion" id="YourQuestion" placeholder="Сообщение" required/>
+        </div>
+        <button id="ButtonSumbit" type="submit" className="btn" onClick={btnClick}>Отправить</button>
+      </form>
+
+      </div>
+
+
+  )
 }
