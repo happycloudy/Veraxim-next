@@ -4,11 +4,11 @@ import Footer from './footer'
 
 export default function Requisites() {
   return (
-    <div className="container">
+    <div className="container" style={{backgroundColor:"rgba(255, 255, 255, .8)",height:"100%"}}>
       <Head title="Реквизиты | Veraxim"/>
       <Header/>
 
-      <div className="jumbotron jumbotron-fluid" style={{boxShadow: "0px 0px 30px 0px rgba(159, 154, 161, 1)", borderRadius: "10px" }}>
+      <div className="jumbotron jumbotron-fluid mt-5" style={{boxShadow: "0px 0px 30px 0px rgba(159, 154, 161, 1)", borderRadius: "10px" }}>
         <div className="container">
           <p className="lead">
           <span style={{opacity:".8"}}>

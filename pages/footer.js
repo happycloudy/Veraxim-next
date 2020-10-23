@@ -6,7 +6,7 @@ export default function Footer(){
         </div>
 
         <div className="row">
-          <div className="col text-center mt-3" style={{fontWeight:"600", fontSize:"1.5rem"}}>
+          <div className="col text-center mt-3 mb-5" style={{fontWeight:"600", fontSize:"1.5rem"}}>
             Благодарим за поддержку Фонд Содействия развитию малых форм предприятий в научно-технической сфере!
           </div>
         </div>

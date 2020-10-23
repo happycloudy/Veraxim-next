@@ -4,12 +4,12 @@ import Footer from './footer'
 
 export default function Suggested(title) {
   return (
-    <div className="container">
+    <div className="container" style={{backgroundColor:"rgba(255, 255, 255, .8)",height:"100%"}}>
       <Head title="Что мы предлагаем | Veraxim"/>
       <Header/>
 
-      <div className="jumbotron jumbotron-fluid">
-        <div className="container suggest">
+      <div className="container" style={{width:"60%"}}>
+        <div className="container suggest mt-5">
             <img src ="/otoplenie.png" className="image"></img>
             <h1>Установка по производству кормовой добавки</h1>
         </div>
@@ -45,9 +45,6 @@ export default function Suggested(title) {
         padding: 0px 0px 0px 0px;
         text-transform: none;
         font-size: 14px;
-      }
-      .jumbotron{
-        opacity: .9;
       }
       .suggest{
         text-align: center;

@@ -4,11 +4,11 @@ import Footer from './footer'
 
 export default function Connection(title) {
   return (
-    <div className="container">
+    <div className="container" style={{backgroundColor:"rgba(255, 255, 255, .8)",height:"100%"}}>
       <Head title="Обратная связь | Veraxim"/>
       <Header/>
 
-      <div className="jumbotron jumbotron-fluid mt-5">
+      <div className="jumbotron jumbotron-fluid mt-5" style={{boxShadow: "0px 0px 30px 0px rgba(159, 154, 161, 1)", borderRadius: "10px" }}>
         <h1>Вы можете написать нам электронную почту VERAXIM@MAIL.RU или отправить свой вопрос здесь: </h1>
         <form className="col-10 offset-1" action="/sendform" method="POST">
         <div className="form-group">
