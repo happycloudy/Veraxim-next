@@ -6,7 +6,7 @@ const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
-const mailer = require('./ExpressServer/mail')
+const mailer = require('./ExpressServer/mailer')
 
 app.prepare().then(() => {
   const server = express()
@@ -27,15 +27,12 @@ app.prepare().then(() => {
     let email = req.body.youremail
     let message = req.body.yourquestion
 
-    console.log(name, email, message)
-    // console.log(req.body)
-    mailer({ email, name, text: message }).then(() => {
-      console.log('success')
-      res.send('success')
-    }).catch((error) => {
-      console.log('failed', error)
-      res.send('badddd')
+    mailer({
+      to: email,
+      subject: "test subject",
+      text: "test text"
     })
+
     res.redirect("/connection")
   })
 
