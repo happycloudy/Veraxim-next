@@ -2,11 +2,13 @@ export default  function Header() {
     return (
       
       <nav className="navbar navbar-expand-lg navbar-light ">
-        <div className="col-3 Logo">
+        <div className="col-lg-3  col-md-12 Logo">
           <a >Общество с ограниченной ответственностью</a>
           <h2>"Верахим"</h2>
         </div>
-
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
         <div className="collapse navbar-collapse offset-3" id="navbarNavDropdown">
           <ul className="navbar-nav">
@@ -29,8 +31,21 @@ export default  function Header() {
               <a className="nav-link" href="/connection">Обратная связь</a>
             </li>
           </ul>
-        </div>
+        </div> 
         
+
+        
+
+
+
+
+
+
+
+
+
+
+
         <style jsx global>{`
         .nav-link{
             color:#454545;
@@ -48,7 +63,6 @@ export default  function Header() {
           }
           .navbar{
             font: normal normal 1rem Arial,Helvetica,sans-serif;
-            border-radius:10px;
           }
         `}
         </style>
