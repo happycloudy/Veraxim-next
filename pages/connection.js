@@ -9,7 +9,23 @@ export default function Connection(title) {
       <Header/>
 
       <div className="jumbotron jumbotron-fluid">
-        
+        <h1>Вы можете написать нам электронную почту VERAXIM@MAIL.RU или отправить свой вопрос здесь: </h1>
+
+        <form>
+        <div class="form-group col-10 offset-1">
+          <label for="YourName">Имя</label>
+          <input type="text" className="form-control" id="YourName" placeholder="Иван"></input>
+        </div>
+        <div class="form-group col-10 offset-1">
+          <label for="YourMail">Email</label>
+          <input type="text" className="form-control" id="YourMail" placeholder="example@mail.ru"></input>
+        </div>
+        <div class="form-group col-10 offset-1">
+          <label for="YourQuestion">Сообщение</label>
+          <input type="text" className="form-control ask" id="YourQuestion" placeholder="Сообщение"></input>
+        </div>
+      </form>
+
       </div>
 
       <Footer/>
@@ -33,6 +49,14 @@ export default function Connection(title) {
       }
       .jumbotron{
         opacity: .9;
+        text-align: center;
+      }
+      label{
+        font: normal normal 20px Arial,Helvetica,sans-serif;
+        margin: 1vw 0 1vw 0;
+      }
+      .ask{
+        height: 7vw;
       }
     `}
     </style>
