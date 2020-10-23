@@ -24,7 +24,7 @@ export default function Connection(title) {
           <label htmlFor="YourQuestion">Сообщение</label>
           <input type="text" className="form-control" id="YourQuestion" placeholder="Сообщение"/>
         </div>
-        <button id="ButtonSumbit" type="submit" className="btn" onClick={btnClick()}>Отправить</button>
+        <button id="ButtonSumbit" type="submit" className="btn" onClick={btnClick}>Отправить</button>
       </form>
 
       </div>
@@ -64,7 +64,8 @@ export default function Connection(title) {
   )
 }
 
-function btnClick(){
+function btnClick(e){
+  e.preventDefault()
    /* let email=document.getElementById("YourEmail");
     let name=document.getElementById("YourName");
     let question=document.getElementById("YourQuestion");
