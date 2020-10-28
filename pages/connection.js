@@ -44,6 +44,7 @@ export default function Connection(title) {
         margin: 0px 0px 0px 0px;
         padding: 0px 0px 0px 0px;
         text-transform: none;
+        height: 100%;
       }
       .jumbotron{
         opacity: .9;
