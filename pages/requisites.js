@@ -47,7 +47,6 @@ export default function Requisites() {
         margin: 0px 0px 0px 0px;
         padding: 0px 0px 0px 0px;
         text-transform: none;
-        height: 100vh;
       }
       .lead{
         text-align: right;
