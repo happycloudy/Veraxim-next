@@ -37,7 +37,7 @@ export default  function Header() {
 
 
         <style jsx global>{`
-        @media (max-width:992px) {
+        @media (max-width:991px) {
           #navButton{
             display:block;
             margin-top:5vw;
