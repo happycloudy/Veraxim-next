@@ -2,7 +2,7 @@ export default  function Header() {
     return (
 
       <nav className="navbar navbar-expand-lg navbar-light ">
-        <div className="col-lg-3  col-md-12 Logo">
+        <div className="col-lg-3 col-md-12 Logo">
           <a >Общество с ограниченной ответственностью</a>
           <h2>"Верахим"</h2>
         </div>

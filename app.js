@@ -2,7 +2,7 @@ const express = require('express')
 const next = require('next')
 const bodyParser = require('body-parser')
 
-const dev = process.env.NODE_ENV !== 'production'
+const dev = process.env.NODE_ENV == 'production'
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
@@ -41,8 +41,8 @@ app.prepare().then(() => {
     return handle(req, res)
   })
 
-  server.listen(3000, (err) => {
+  server.listen(58154, (err) => {
     if (err) throw err
-    console.log('> Read on http://localhost:3000')
+    console.log('> Read on http://localhost:58154')
   })
 })

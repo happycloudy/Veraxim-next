@@ -2,7 +2,7 @@ export default function Footer(){
     return(
       <footer className="container mt-5" >
         <div className="row">
-          <div className="col text-center"> <img src="fondimg.webp"/></div>
+          <div className="col text-center img-fluid"> <img src="fondimg.webp"/></div>
         </div>
 
         <div className="row">
@@ -12,15 +12,15 @@ export default function Footer(){
         </div>
 
         <div className="row">
-          <div className="col text-center mt-3" style={{display:"flex", alignItems: "center", justifyContent: "center"}}>
-            <a className="btn button1" role="button" href="http://veraxim.website/">
+          <div className="col-sm text-center mt-3" style={{display:"flex", alignItems: "center", justifyContent: "center"}}>
+            <a className="btn button" role="button" href="http://veraxim.website/">
               Veraxim.website
             </a>
           </div>
         </div>
         <style jsx global>{`
-        .button1{
-          width: 13vw;
+        .button{
+          width: 15vw;
           height: 6vh;
           background-color:#ffbe4d;
           display:flex;
@@ -34,9 +34,9 @@ export default function Footer(){
           -moz-box-shadow:    6px 4px 16px 0px rgba(50, 50, 50, 0.6);
           box-shadow:         6px 4px 16px 0px rgba(50, 50, 50, 0.6);
 
-          
-          font: normal normal 1.2rem Arial,Helvetica,sans-serif;
-          color: #454545;
+
+          font: normal normal  Arial,Helvetica,sans-serif;
+
           text-decoration: none;
           text-align: left;
           line-height: 24px;
