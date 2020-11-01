@@ -12,25 +12,19 @@ app.prepare().then(() => {
   const server = express()
 
 
-  // server.use(bodyParser.json())
-  // var jsonParser = bodyParser.json()
-
 
   server.use(bodyParser.urlencoded({ extended: false }))
 
   server.post('/sendform', async (req, res) => {
 
-
-    // const { name ,email , message } = req.body
-    // let {name,email,message} = {...req.body}
     let name = req.body.yourname
     let email = req.body.youremail
     let message = req.body.yourquestion
 
     mailer({
-      to: email,
-      subject: "test subject",
-      text: "test text"
+      to: "arion.mikola@gmail.com",
+      subject: "Сообщение от " + name,
+      text: message + "\nЭл. почта: " + email
     })
 
     res.redirect("/connection")

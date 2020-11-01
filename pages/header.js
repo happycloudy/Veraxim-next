@@ -15,22 +15,32 @@ export default  function Header() {
         <div className="collapse navbar-collapse offset-3" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="/">Главная </a>
+              <Link href="/">
+                <a className="nav-link" >Главная </a>
+              </Link>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Деятельность компании
               </a>
               <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a className="dropdown-item" href="/description">Описание проекта</a>
-                <a className="dropdown-item" href="/suggested">Что мы предлагаем</a>
+                <Link href="/description">
+                  <a className="dropdown-item" >Описание проекта</a>
+                </Link>
+                <Link href="/suggested">
+                  <a className="dropdown-item" >Что мы предлагаем</a>
+                </Link>
               </div>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/requisites">Реквизиты</a>
+              <Link href="/requisites">
+                <a className="nav-link" >Реквизиты</a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/connection">Обратная связь</a>
+              <Link href="/connection">
+                <a className="nav-link" >Обратная связь</a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -39,10 +49,12 @@ export default  function Header() {
 
 
         <style jsx global>{`
-        @media (max-width:991px) {
+        @media (max-width:600px) {
           #navButton{
             display:block;
             margin-top:5vw;
+            border: 3px solid!important;
+            margin-left: 40%;
           }
         }
         .nav-link{
@@ -62,6 +74,7 @@ export default  function Header() {
           .navbar{
             font: normal normal 1rem Arial,Helvetica,sans-serif;
           }
+
         `}
         </style>
       </nav>
