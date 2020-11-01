@@ -22,7 +22,7 @@ app.prepare().then(() => {
     let message = req.body.yourquestion
 
     mailer({
-      to: "arion.mikola@gmail.com",
+      to: "veraxim@mail.ru",
       subject: "Сообщение от " + name,
       text: message + "\nЭл. почта: " + email
     })
