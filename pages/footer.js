@@ -2,7 +2,9 @@ export default function Footer(){
     return(
       <footer className="container mt-5" >
         <div className="row">
-          <div className="col text-center img-fluid"> <img src="fondimg.webp"/></div>
+          <div className="col text-center img-fluid">
+            <img className="img-fluid " src="fondimg.png"/>
+          </div>
         </div>
 
         <div className="row">
@@ -20,7 +22,6 @@ export default function Footer(){
         </div>
         <style jsx global>{`
         .button{
-          width: 15vw;
           height: 6vh;
           background-color:#ffbe4d;
           display:flex;
@@ -44,6 +45,7 @@ export default function Footer(){
           padding: 0;
           text-transform: none;
           font-weight: 600;
+          min-width: 50%;
         }
         `}
       </style>

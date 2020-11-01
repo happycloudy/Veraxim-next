@@ -4,9 +4,9 @@ import Header from './header'
 
 export default function Description() {
   return (
-    <div className ="container " style={{backgroundColor:"rgba(255, 255, 255, .8)",height:"100%"}}>
+    <div className ="container " style={{backgroundColor:"rgba(255, 255, 255, .8)",height:"100%", width:"100%"}}>
     <Header/>
-    <div className="container" style={{width: "50vw"}}>
+    <div className="container sm-w-100" style={{width: "50vw"}}>
     <Head title="Описание"/>
 
     <div className="row description" >
@@ -33,8 +33,14 @@ export default function Description() {
 
     <style jsx>{`
       .text{
-        padding: 10px;
         text-align:center;
+        padding-left: 0;
+        padding-right: 30px;
+      }
+      @media (max-width: 600px){
+        .sm-w-100{
+          width: 100vw!important;
+        }
       }
     `}
     </style>

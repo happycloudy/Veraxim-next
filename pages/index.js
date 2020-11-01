@@ -4,7 +4,7 @@ import Header from './header'
 
 export default function Home() {
   return (
-    <div className="container" style={{backgroundColor:"rgba(255, 255, 255, .8)",height:"100%"}}>
+    <div className="container" style={{backgroundColor:"rgba(255, 255, 255, .8)",height:"100%", width: "100%"}}>
     <Head title="Главная"/>
       <Header/>
       <Main/>
@@ -30,7 +30,8 @@ export default function Home() {
         background-color: rgba(255,255,255,.8);
         font: normal normal 1.5rem Arial,Helvetica,sans-serif;
         text-align:center;
-        padding: 20px 10px 20px 10px;
+        padding: 1.5vh 1vw 1.5vh 1vw;
+
       }
       .text{
         padding: 10px 10px 10px 10px;
@@ -45,19 +46,15 @@ export default function Home() {
 
 
 
-
-
-
-
 function Main(){
   return(
     <div className="container">
       <div className="container">
-      <div className="col text-center mb-5">
-        <img src="veraximimg.webp" className="img-fluid"></img>
+        <div className="col text-center mb-5">
+          <img src="veraximimg.webp" className="img-fluid"></img>
         </div>
       </div>
-      <div className="container">
+      <div className="row">
         <div className="col-10 offset-1">
           <div className="HellowordsText">
             <p>Команда ООО 'ВЕРАХИМ приветствует Вас на официальном сайте нашей компании!</p>

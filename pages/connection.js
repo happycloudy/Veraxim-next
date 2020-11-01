@@ -64,6 +64,11 @@ export default function Connection(title) {
         -moz-box-shadow:    6px 4px 16px 0px rgba(50, 50, 50, 0.6);
         box-shadow:         6px 4px 16px 0px rgba(50, 50, 50, 0.6);
       }
+      @media (max-width: 600px){
+        h1{
+          font-size: 1.5rem;
+        }
+      }
     `}
     </style>
     </div>
